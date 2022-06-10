@@ -1,10 +1,14 @@
+// index.js
+// Run tests: npm test
+// Run linter: npm lint
+// Run formatter: npm format
+
 // Sum all elements in an array of numbers
 
-// const arr = [1, 2, 3, 4, 5];
-// Answer: 15
+// const sum = (arr) => arr.reduce((acc, num) => acc + num)
 
-const name = "Mike"
+function sum(arr) {
+  return arr.reduce((acc, num) => acc + num);
+}
 
-const location = 'Thailand'
-
-const sum = (arr) => arr.reduce((acc, num) => acc + num)
+module.exports = sum;

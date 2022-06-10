@@ -1,4 +1,5 @@
 # Ignore artifacts:
 *.html
+*.css
 build
 coverage
