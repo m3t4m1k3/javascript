@@ -4,8 +4,9 @@
 
 // const sum = (arr) => arr.reduce((acc, num) => acc + num)
 
-function sum(arr) {
-  return arr.reduce((acc, num) => acc + num);
+function sum(arr = [0]) {
+  return arr.length === 0 ? 0
+    : arr.reduce((acc, num) => acc + num);
 }
 
 module.exports = sum;
