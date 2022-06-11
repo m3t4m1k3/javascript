@@ -1,7 +1,4 @@
 // index.js
-// Run tests: npm test
-// Run linter: npm lint
-// Run formatter: npm format
 
 // Sum all elements in an array of numbers
 

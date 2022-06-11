@@ -16,6 +16,6 @@ console.log([1, 2, 3].toString());
 console.log({ a: 1 }.toString());
 // [object Object]
 
-const obj = {a: 1};
-console.log(`an object: ${obj}`)
+const obj = { a: 1 };
+console.log(`an object: ${obj}`);
 // "an object: [object Object]
