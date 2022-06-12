@@ -1,4 +1,5 @@
-const sum = require("./index");
+// const sum = require("./index");
+import { sum } from "./index.js";
 
 test("sum([1,2,3,4,5]) to return 15", () => {
   expect(sum([1, 2, 3, 4, 5])).toBe(15);

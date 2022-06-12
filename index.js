@@ -9,4 +9,4 @@ function sum(arr = [0]) {
     : arr.reduce((acc, num) => acc + num);
 }
 
-module.exports = sum;
+export { sum };

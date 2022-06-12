@@ -2,14 +2,37 @@
   "name": "scratch",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "devDependencies": {
     "eslint": "8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^28.1.1",
     "prettier": "2.6.2"
   },
+  "jest": {
+    "verbose": true
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "rules": {}
+  },
+  "eslintIgnore": ["hello.js", "world.js"],
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
     "format": "prettier --write .",
     "lint": "eslint ."
   },
