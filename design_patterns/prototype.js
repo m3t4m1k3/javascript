@@ -6,12 +6,12 @@ const person = {
   }
 };
 
-const sam = Object.create(person, { name: { value: "Sam" }});
+const sam = Object.create(person, { name: { value: "Sam" } });
 
 console.log(sam.eat());
 
 Object.getPrototypeOf(sam);
 
-Array.prototype.bad = function() {
+Array.prototype.bad = function () {
   console.log("I'm bad");
-}
+};

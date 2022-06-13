@@ -7,16 +7,22 @@
     "eslint": "8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^28.1.1",
+    "onchange": "^7.1.0",
     "prettier": "2.6.2"
   },
   "jest": {
     "verbose": true
   },
   "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "semi": false,
-    "singleQuote": true
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
   },
   "eslintConfig": {
     "env": {
@@ -26,14 +32,19 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-      "ecmaVersion": "latest"
+      "ecmaVersion": "latest",
+      "sourceType": "module"
     },
     "rules": {}
   },
-  "eslintIgnore": ["hello.js", "world.js"],
+  "eslintIgnore": [
+    "hello.js",
+    "world.js"
+  ],
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
     "format": "prettier --write .",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "lint": "eslint ."
   },
   "keywords": [],

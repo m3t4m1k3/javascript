@@ -24,6 +24,7 @@ If we log the new object 'sam' the eat method will not be visible on the object.
 ```JavaScript
 console.log(sam.eat());
 ```
+
 This is because it will look up the prototype chai for this method until it reaches and object who has the prototype of null.
 
 We can access the prototype of the object by accessing the `object.__proto__` property, however this method is no longer a modern best practice. We should use the following method:
@@ -31,7 +32,9 @@ We can access the prototype of the object by accessing the `object.__proto__` pr
 ```JavaScript
 Object.getPrototypeOf(sam);
 ```
+
 Classes in JavaScript prototype refers to the constructor. This means we can extend a class with additional function if we want to, however this is also generally considered a bad practice.
+
 ```JavaScript
 Array.prototype.bad = function() {
   console.log("I'm bad");
