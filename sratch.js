@@ -1,5 +1,9 @@
 // scratch.js
 
-const name = "Mike";
+const name = "Mi";
 
-name
+name;
+
+const arr = new Array(10).fill(1);
+
+arr;
